@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<head>
+    <meta http-equiv="refresh" content="5">
+</head>
+
+        <article onload="update_values();" class="media content-section">
+          <div class="media-body">
+            <h2><a class="article-title" href="#">Heart rate :{{bpm}}
+            </a></h2>
+          </div>
+        </article>
+    <figure>
+    <iframe src = "http://127.0.0.1:8050/dash/" width=100% height=400></iframe>
+    </figure>
+
+        <article class="media content-section">
+          <div class="media-body">
+            <h2><a class="article-title" href="#">motion</a></h2>
+          </div>
+
+        </article>
+
+
+
+        <article class="media content-section">
+          <div class="media-body">
+            <h2><a class="article-title" href="#">breathing</a></h2>
+          </div>
+        </article>
+
+{% endblock content %}
