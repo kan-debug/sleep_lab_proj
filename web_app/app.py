@@ -1,8 +1,6 @@
 
-from flask import Flask, render_template,jsonify
-from modules.heart_rate_analysis import data_analysis_bpm
-from modules.file_tail import FileTail
-from modules.file_play import FilePlay
+from flask import Flask, render_template
+from interface.file_play import FilePlay
 from modules.heart_info import HeartInfo
 import dash
 from dash.dependencies import Output, Input

@@ -11,7 +11,6 @@ class FilePlay(object):
         # low CPU (probably same as the block below this, but ALLOWS tell()!
         while not line:
             line = self.fh.readline()
-            time.sleep(0.002)
         return line
     def __next__(self):
         """Interator "next" call."""
